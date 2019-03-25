@@ -15,3 +15,5 @@ def current_player(board)
     return "O"
   end
 end
+
+input_type = gets =~ /hello/i ? "greeting" : "other"

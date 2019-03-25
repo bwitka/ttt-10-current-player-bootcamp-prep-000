@@ -16,4 +16,11 @@ def current_player(board)
   end
 end
 
-input_type = gets =~ /hello/i ? "greeting" : "other"
+input_type = turn_count(board) % 2 == 0 ? "X" : "O"
+
+input_type =
+  if gets =~ /hello/i
+    "greeting"
+  else
+    "other"
+  end
